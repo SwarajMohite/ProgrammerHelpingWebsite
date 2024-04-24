@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programmer Helping Website</title>
+    <style>
+       
+
+.container{
+	
+	animation-name:compiler;
+	animation-duration:5s;
+	animation-iteration-count:1;
+	width:420px;
+	background: transparent;
+	backdrop-filter:blur(2px);
+	box-shadow: 0 0 10px rgba(0,0,0,.2);
+        border:2px solid;
+	font-size:16px;
+	border-radius: 40px;
+	color:#fff;
+	
+	
+}
+
+
+.form input {
+	position:relative;
+	width:80%;
+	height:50px;
+	margin:30px 0;
+	background:transparent;
+	border:none;
+	outline:none;
+	border:2px solid;
+	color:#fff;
+	font-size:16px;
+	border-radius: 40px;
+	
+}
+.form ::placeholder{
+	color:#fff;
+}
+.forget{
+        display:flex;
+	justify-content: space-between;
+	font-size:14.5px;
+	margin: -15px 0 15px;
+	color:#fff;
+}
+
+@keyframes compiler {
+	from{
+	width:200px;
+	opacity: 0;
+        transform: translateY(-50px);
+	}
+	to{
+	width:420px;
+	opacity: 1;
+        transform: translateY(0);
+	}
+}
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #daad86; /* Background color for the whole webpage */
+            color: #333; /* Main font color */
+        }
+        header {
+             
+	background:url("Background.png") ;
+	color:#fff;
+
+ /* Semi-transparent background for header */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            animation: fadeIn 1s ease-out;
+        }
+        nav {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for navigation */
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fbeec1; /* Semi-transparent background for sections */
+            border-radius: 5px;
+            animation: slideIn 1s ease-out;
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for footer */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            animation: fadeIn 1s ease-out;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        /* Animation Keyframes */
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>LogicLegends</h1>
+        <p>Computer Engineering Students</p>
+	<p>H1 Division</p>
+	
+    </header>
+    <nav>
+        
+	<a href="login.html">Start Journey</a>
+        <a href="about.html">About US</a>
+        <a href="#contact">Contact</a>
+	 <a href="#feedback">Feedack</a>
+    </nav>
+    <br><br><marquee behavior="scroll" direction="left">Welcome to Programmer Helping Website!</marquee>
+    
+    <br>
+    <div class="swaraj">
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>
+            <a href ="mailto:@gmail.com">Mail me</a><br>
+<br>
+<a href="https://github.com/Swaraj">My Github</a><br>
+<p> Contact No. : 12345****</p>
+            
+        </p>
+    </section>
+    <section id="feedback">
+        <h2>Feedback Form</h2>
+    <form action="submit_feedback.php" method="post">
+        <!-- Name input -->
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <!-- Email input -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <!-- Rating input -->
+        <label for="rating">Rating:</label><br>
+        <input type="radio" id="rating1" name="rating" value="5" required>
+        <label for="rating1">5</label>
+        <input type="radio" id="rating2" name="rating" value="4">
+        <label for="rating2">4</label>
+        <input type="radio" id="rating3" name="rating" value="3">
+        <label for="rating3">3</label>
+        <input type="radio" id="rating4" name="rating" value="2">
+        <label for="rating4">2</label>
+        <input type="radio" id="rating5" name="rating" value="1">
+        <label for="rating5">1</label><br><br>
+        
+        <!-- Feedback input -->
+        <label for="feedback">Feedback:</label><br>
+        <textarea id="feedback" name="feedback" rows="4" required></textarea><br><br>
+        
+        <!-- Additional comments input -->
+        <label for="comments">Additional Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4"></textarea><br><br>
+        
+        <!-- Checkbox input -->
+        <label>Preferred Contact Method:</label><br>
+        <input type="checkbox" id="contact_email" name="contact_method" value="email">
+        <label for="contact_email">Email</label><br>
+        <input type="checkbox" id="contact_phone" name="contact_method" value="phone">
+        <label for="contact_phone">Phone</label><br><br>
+        
+        <!-- Submit button -->
+        <input type="submit" value="Submit" style="background-color:blue;"><br><br><br>
+    </form></section><section>
+      <center> <h2>Motivational Dose</h2>
+		<audio controls>
+  <source src="Motivation.mp3" type="audio/mpeg">
+
+</audio><br><br><br>
+<video width="320" height="240" controls>
+  <source src="MotivationVideo.mp4" type="video/mp4">
+  
+</video>
+<video width="320" height="240" controls>
+  <source src="video1.mp4" type="video/mp4">
+  
+</video></center>
+</section>
+</div>
+    <footer>
+        <p>&copy; 2024 LogicLegends - All Rights Reserved</p>
+    </footer>
+</body>
+</html>
