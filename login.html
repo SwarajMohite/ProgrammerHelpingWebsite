@@ -1,0 +1,106 @@
+ <!DOCTYPE html>
+<html>
+
+<head>
+    <title>LogicLegends COMPILER</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="logo.png" type="image/icon type">
+</head>
+<style>
+body{
+	background:url("Background.png") ;
+	color:#fff;
+}
+
+
+.container{
+	
+	animation-name:compiler;
+	animation-duration:5s;
+	animation-iteration-count:1;
+	width:420px;
+	background: transparent;
+	backdrop-filter:blur(2px);
+	box-shadow: 0 0 10px rgba(0,0,0,.2);
+        border:2px solid;
+	font-size:16px;
+	border-radius: 40px;
+	color:#fff;
+	
+	
+}
+
+
+.form input {
+	position:relative;
+	width:80%;
+	height:50px;
+	margin:30px 0;
+	background:transparent;
+	border:none;
+	outline:none;
+	border:2px solid;
+	color:#fff;
+	font-size:16px;
+	border-radius: 40px;
+	
+}
+.form ::placeholder{
+	color:#fff;
+}
+.forget{
+        display:flex;
+	justify-content: space-between;
+	font-size:14.5px;
+	margin: -15px 0 15px;
+	color:#fff;
+}
+
+@keyframes compiler {
+	from{
+	width:200px;
+	opacity: 0;
+        transform: translateY(-50px);
+	}
+	to{
+	width:420px;
+	opacity: 1;
+        transform: translateY(0);
+	}
+}
+ a {
+            color: #ffa500;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #ff7c00;
+        }
+</style>
+
+<body>
+    	
+    <div class="container">
+        <h2>Login</h2>
+	
+        <form action="language_selection.html" >
+           <div class="form">
+            <input type="text" id="username" name="username" placeholder="UserName "  required><box-icon name='user-circle'></box-icon><i class='bx bx-user-circle' ></i><br><br>
+            <input type="password" id="password" name="password" placeholder="Password" style="color:#fff" required><box-icon name='lock' ></box-icon><i class='bx bx-lock'></i><br>
+	    </div>
+	    <label><input type="checkbox">Remember Me</label></br></br>
+	
+	    <a href="#" style="color:#fff">Forget Password</a><br><br>
+
+            <button type="submit">Login</button>
+	    <p>Don't have an account ?
+	     <a href="form.html" style="color:#fff">Register</a></p>.<br><br>
+        </form>
+    </div>
+	 <center><p><a href="index.html">Go back</a></p></center>
+</body>
+
+</html>              
